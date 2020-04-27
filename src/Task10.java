@@ -16,7 +16,7 @@ public class Task10 {
                 System.out.println("Введите значение в  строке № " + x + ", столбце № " + y);
                 int n = in.nextInt();
                 matrix[x][y] = 3 * n;
-
+                //
             }
         }
     }
