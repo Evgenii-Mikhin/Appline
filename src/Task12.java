@@ -6,7 +6,6 @@ public class Task12 {
         System.out.println("Введите текст:");
         Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine();
-        //System.out.println(string);
         String string2 = string.replaceAll(" ", "");
         System.out.println(string2);
     }
