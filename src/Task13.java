@@ -17,10 +17,9 @@ public class Task13 {
             }
             if (a < b) {
                 System.out.println(string2);
-            }
-            else {
+            } else {
                 System.out.println("Размер строк равен");
             }
         }
     }
-    }
+}
