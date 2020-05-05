@@ -14,7 +14,6 @@ public class Task18 {
                 while (lnr.readLine() != null) {
                     linenumber++;
                 }
-            //  System.out.println("Total number of lines : " + linenumber);
                 try (FileInputStream fin = new FileInputStream("Task18.txt")) {
                     System.out.println("Данные из файла Task18.txt");
                     System.out.printf("", fin.available());
@@ -29,11 +28,9 @@ public class Task18 {
                 BufferedReader br =
                         new BufferedReader(new InputStreamReader(System.in));
                 System.out.println("Построчно введите исправления");
-                System.out.println("Количество строк должно соответсвовать "+ linenumber);
-                try (FileWriter fw = new FileWriter("Task18.txt"))
-                {
-                    for (int countline=1; countline<=linenumber;countline++ ) {
-                        // System.out.println("Введите текст :");
+                System.out.println("Количество строк должно соответсвовать " + linenumber);
+                try (FileWriter fw = new FileWriter("Task18.txt")) {
+                    for (int countline = 1; countline <= linenumber; countline++) {
                         str = br.readLine();
                         if (str.compareTo("stop") == 0) break;
                         str = str + "\r\n";
@@ -41,7 +38,8 @@ public class Task18 {
                     }
                 } catch (IOException exc) {
                     System.out.println("Ощибка файла!" + exc);
-                }lnr.close();
+                }
+                lnr.close();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
