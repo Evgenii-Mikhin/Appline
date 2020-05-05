@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Task16 {
     public static void main(String[] args) {
         try (FileInputStream fin = new FileInputStream("file.txt")) {
-            System.out.printf("File size: %d bytes \n", fin.available());
+            System.out.printf("", fin.available());
 
             int i = -1;
             while ((i = fin.read()) != -1) {
